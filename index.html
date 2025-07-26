@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PY Car Rentals | Self Drive & With Driver | Pondicherry</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; background:#f8f9fa; color:#222; }
+    header { background:#223c50; color:#fff; text-align:center; padding:35px 10px 30px 10px;}
+    nav { background:#205065; text-align:center; padding:12px 0;}
+    nav a { color:#fff; text-decoration:none; margin:0 20px; font-weight:600; }
+    section { max-width:1000px; margin:auto; padding:40px 20px 25px 20px; }
+    h1,h2,h3 { color:#205065; }
+    .fleet-grid { display:flex; flex-wrap:wrap; gap:18px; justify-content:center; }
+    .car-card { background:#fff; border-radius:8px; box-shadow:0 2px 6px #0001; padding:18px 10px 16px 10px; width:267px; text-align:center; }
+    .car-card img { width:100%; height:140px; object-fit:cover; border-radius:4px; background:#eee;}
+    form { background:#fff; padding:25px 18px 18px 18px; border-radius:8px; box-shadow:0 2px 6px #0002; max-width:420px; margin:auto;}
+    form input, form select, form textarea { width:100%; padding:8px; margin:7px 0 12px 0; border-radius:4px; border:1px solid #ccc;}
+    form button { background:#205065; color:#fff; padding:10px 22px; font-size:1rem; border:none; border-radius:5px; cursor:pointer; }
+    .contact { line-height:2; text-align:center;}
+    footer { background:#205065; color:#fff; text-align:center; padding:15px 0; margin-top:25px;}
+    @media (max-width:800px) { .fleet-grid { flex-direction:column; align-items:center; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PY Car Rentals</h1>
+    <p>Self Drive and With Driver Car Rentals in Pondicherry</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#fleet">Cars</a>
+    <a href="#book">Book Now</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to PY Car Rentals</h2>
+    <p style="text-align:center;max-width:700px;margin:auto;">
+      Planning a trip to Pondicherry? PY Car Rentals offers self driving and chauffeur-driven cars, giving you the freedom and comfort to explore the city and beyond. Discover our well-maintained fleet, clear pricing, and customer-first policies—perfect for both tourists and locals looking for affordable, hassle-free car rental options.</p>
+    <p style="text-align:center;margin-top:22px;">
+      <a href="#book"><button>Book Your Car Now</button></a>
+    </p>
+  </section>
+
+  <section id="fleet">
+    <h2>Featured Cars</h2>
+    <div class="fleet-grid">
+      <div class="car-card">
+        <img src="https://source.unsplash.com/400x220/?suv,car" alt="SUV 5 Seater">
+        <h3>Honda City</h3>
+        <p>Self Drive<br/>₹2,500/day</p>
+      </div>
+      <div class="car-card">
+        <img src="https://source.unsplash.com/400x220/?innova,car" alt="SUV 7+1">
+        <h3>Mahindra XUV</h3>
+        <p>With Driver<br/>₹3,000/day</p>
+      </div>
+      <div class="car-card">
+        <img src="https://source.unsplash.com/400x220/?sedan" alt="Sedan">
+        <h3>Hyundai Verna</h3>
+        <p>Self Drive<br/>₹2,200/day</p>
+      </div>
+      <div class="car-card">
+        <img src="https://source.unsplash.com/400x220/?hatchback" alt="Hatchback">
+        <h3>Maruti Swift</h3>
+        <p>Self Drive<br/>₹1,800/day</p>
+      </div>
+      <div class="car-card">
+        <img src="https://source.unsplash.com/400x220/?car" alt="Compact">
+        <h3>Toyota Etios</h3>
+        <p>With Driver<br/>₹2,500/day</p>
+      </div>
+    </div>
+    <p style="text-align:center; font-size:1rem; margin-top:13px;">Many more available—contact us for custom requirements!</p>
+  </section>
+
+  <section id="book">
+    <h2>Reservation Form</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <label for="car">Select Car:</label>
+      <select id="car">
+        <option>Honda City - Self Drive</option>
+        <option>Mahindra XUV - With Driver</option>
+        <option>Hyundai Verna - Self Drive</option>
+        <option>Maruti Swift - Self Drive</option>
+        <option>Toyota Etios - With Driver</option>
+      </select>
+      <label for="type">Rental Type:</label>
+      <select id="type">
+        <option>Self Drive</option>
+        <option>With Driver</option>
+      </select>
+      <input type="date" placeholder="Pick-up Date" required>
+      <input type="date" placeholder="Return Date" required>
+      <textarea placeholder="Any requests? (Optional)"></textarea>
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center;max-width:700px;margin:auto;">
+      PY Car Rentals provides trusted, affordable, and flexible car rental services in Pondicherry. Whether you prefer the thrill of self-driving or the convenience of a chauffeur, we have something for everyone. Our commitment to transparent pricing, easy reservations, and customer satisfaction sets us apart as a top choice for both locals and visitors.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Location</h2>
+    <div class="contact">
+      <strong>Location:</strong> Pondicherry<br/>
+      <strong>Phone:</strong> <a href="tel:8939807044">8939807044</a><br/>
+      <strong>Email:</strong> <a href="mailto:book@pycarsrent.in">book@pycarsrent.in</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 PY Car Rentals. Pondicherry, India
+  </footer>
+</body>
+</html>
